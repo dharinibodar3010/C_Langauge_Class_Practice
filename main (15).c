@@ -1,16 +1,27 @@
 #include<stdio.h>
-int main (){
-    
-    //Error
-    int marks;
-    
-    printf("Enter Marks : ");
-    scanf("%d", &marks);
-    
-    do
+#include<conio.h>
+void main()
+{
+    int marks = 56;
+    if(marks>=70) 
     {
-        printf("pass");
+        printf("A Grade");
     }
-    while(marks>=35);
-    return 0;
+    else if(marks>=60)
+    {
+        printf("B Grade");    
+    }
+    else if(marks>=50)
+    {
+        printf("C Grade");
+    }
+    else if(marks>=40)
+    {
+        printf("D Grade");
+    }
+    else 
+    {
+        printf("Fail");
+    }
+    getch();
 }
